@@ -46,7 +46,7 @@ public class TwinderThread implements Runnable{
         apiInstance.setApiClient(client);
 
         try {
-            for(int i = 0; i < 10000; i ++){
+            for(int i = 0; i < 5000; i ++){
                 SwipeDetails body = new SwipeDetails();
                 String swiperGenerated = "";
                 String swipeeGenerated = "";

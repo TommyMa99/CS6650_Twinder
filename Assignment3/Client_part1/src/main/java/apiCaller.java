@@ -1,6 +1,6 @@
 public class apiCaller {
 
-    private static int NUMTHREADS = 50;
+    private static int NUMTHREADS = 100;
     public static void main(String[] args) throws InterruptedException {
         int succeed_request = 0;
         int failed_request = 0;
