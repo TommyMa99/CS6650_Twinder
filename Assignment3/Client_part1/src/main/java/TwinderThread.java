@@ -39,8 +39,8 @@ public class TwinderThread implements Runnable{
     public void run() {
         // Send 10000 POST request
         ApiClient client = new ApiClient();
-//        client.setBasePath("http://44.235.76.169:8080/Twinder_war%20exploded_2");
-        client.setBasePath("http://twinder-alb-831158465.us-west-2.elb.amazonaws.com:8080/Twinder_war%20exploded_2");
+        client.setBasePath("http://44.235.76.169:8080/Twinder_war%20exploded_2");
+//        client.setBasePath("http://twinder-alb-831158465.us-west-2.elb.amazonaws.com:8080/Twinder_war%20exploded_2");
 //        client.setBasePath("http://localhost:8080/Twinder_war_exploded/");
         SwipeApi apiInstance = new SwipeApi();
         apiInstance.setApiClient(client);

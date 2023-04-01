@@ -38,7 +38,7 @@ public class TwinderGetThread implements Runnable{
                     try {
                         HttpClient httpClient = HttpClientBuilder.create().build();
                         String swipeeGenerated = String.valueOf(ThreadLocalRandom.current().nextInt(1, 50001));
-                        HttpGet statRequest = new HttpGet("http://twinder-alb-831158465.us-west-2.elb.amazonaws.com:8080/Twinder_war%20exploded_2/stats/" + swipeeGenerated);
+                        HttpGet statRequest = new HttpGet("http://44.235.76.169:8080/Twinder_war%20exploded_2/stats/" + swipeeGenerated);
                         HttpResponse statResponse = httpClient.execute(statRequest);
                         HttpEntity entity = statResponse.getEntity();
                         String responseBody = EntityUtils.toString(entity);
@@ -51,7 +51,7 @@ public class TwinderGetThread implements Runnable{
                     try {
                         HttpClient httpClient = HttpClientBuilder.create().build();
                         String swiperGenerated = String.valueOf(ThreadLocalRandom.current().nextInt(1, 50001));
-                        HttpGet matchRequest = new HttpGet("http://twinder-alb-831158465.us-west-2.elb.amazonaws.com:8080/Twinder_war%20exploded_2/matches/" + swiperGenerated);
+                        HttpGet matchRequest = new HttpGet("http://44.235.76.169:8080/Twinder_war%20exploded_2/matches/" + swiperGenerated);
                         HttpResponse matchResponse = httpClient.execute(matchRequest);
                         HttpEntity entity = matchResponse.getEntity();
                         String responseBody = EntityUtils.toString(entity);
